@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset=”utf-8">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Double Cake</title>
+    <style>
+        body {
+            background-color: #deb3b9;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Estilos do Cabeçalho */
+        .cabeçalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #040404;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .cabeçalho__logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cabeçalho__logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .cabeçalho__titulo {
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        .cabeçalho_menu ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .opções__link {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .opções__link:hover {
+            color: #040404;
+        }
+
+        /* Estilos do Menu */
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .menu-item {
+            background-color: #ac6992ab;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .menu-item h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .menu-item ul {
+            list-style-type: none;
+            padding-left: 0;
+            padding-bottom: 15px;
+        }
+
+        .menu-item ul li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabeçalho">
+        <div class="cabeçalho__logo">
+            <img src="img/logo.logo.png.jpg" alt="Logo Double Cake" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <h1 class="cabeçalho__titulo"><b>ⒹⓄⓊⒷⓁⒺ ⒸⒶⓀⒺ</b></h1>
+        </div>
+
+        </div>
+        <nav class="cabeçalho_menu">
+            <ul class="opções">
+                <span></span>
+                <li><a href="home.html" class="opções__link">𝑯𝑶𝑴𝑬</a></li>
+                <span></span>
+                <li><a href="cardapio.html" class="opções__link">𝑪𝑨𝑹𝑫𝑨̀𝑷𝑰𝑶</a></li>
+                <span></span>
+                <li><a href="login.html" class="opções__link">𝑳𝑶𝑮𝑰𝑵</a></li>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu de Itens -->
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="img/empadao.png"  alt="Imagem empadão">
+            <h2>𝔼𝕄ℙ𝔸𝔻𝔸̃𝕆 𝔻𝔼 𝔽ℝ𝔸ℕ𝔾𝕆 🍗 </h2>
+            <ul>
+                <li>R$9,00</li>
+                
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/empada5.png" alt="Imagem empadinha">
+            <h2>𝔼𝕄ℙ𝔸𝔻𝕀ℕℍ𝔸 𝔻𝔼 𝕃𝔼𝕀𝕋𝔼 ℂ𝕆ℕ𝔻𝔼ℕ𝕊𝔸𝔻𝕆 🥞</h2>
+            <ul>
+                <li>R$3,50</li>
+                
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/bolo de chocolate.png"  alt="Imagem bolo">
+            <h2>𝔽𝔸𝕋𝕀𝔸 𝔹𝕆𝕃𝕆 𝔻𝔼 ℂℍ𝕆ℂ𝕆𝕃𝔸𝕋𝔼 🍰</h2>
+            <ul>
+                <li>R$8,00</li>
+               
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/brigadeiro branco.png.jpg" alt="Imagem brigadeiro">
+            <h2>𝔹ℝ𝕀𝔾𝔸𝔻𝔼𝕀ℝ𝕆 𝔹ℝ𝔸ℕℂ𝕆 🍫</h2>
+            <ul>
+                <li>R$4,50</li>
+                
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/pudim.png" alt="Imagem de pudim">
+            <h2>𝕄𝕀ℕ𝕀 ℙ𝕌𝔻𝕀𝕄 🍮</h2>
+            <ul>
+                <li>R$5,00</li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/BROWNIE.PNG.PNG" alt="Imagem brownie">
+            <h2>𝔹ℝ𝕆𝕎ℕ𝕀𝔼 🍪</h2>
+            <ul>
+                <li>ESGOTADO</li>
+            </ul>
+        </div>
+
+        <div class="menu-item">
+            <img src="img/logo.logo.png.jpg" alt="Imagem logo">
+            <h2>𝔹𝔼𝔹𝕀𝔻𝔸𝕊 ➡</h2>
+            
+        </div>
+
+        <div class="menu-item">
+            <img src="img/bebidas.png.jpeg" alt="Imagem bebidas">
+            <h2>𝕆𝕌𝕋ℝ𝕆𝕊</h2>
+            <ul>
+                <li>ℝ𝕖𝕗𝕣𝕚𝕘𝕖𝕣𝕒𝕟𝕥𝕖𝕤: R$4,00 </li>
+                <li>𝕊𝕦𝕔𝕠 𝕟𝕒𝕥𝕦𝕣𝕒𝕝: R$6,00</li>
+                <li>𝔸́𝕘𝕦𝕒: R$3,50</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

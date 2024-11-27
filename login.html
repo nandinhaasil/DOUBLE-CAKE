@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DOUBLE CAKE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('fundo.png.jpeg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            color: #FFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #deb3b9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cabeçalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #040404;
+            padding: 15px 30px;
+            border-bottom: 2px solid #040404;
+            width: 100%;
+        }
+
+        .cabeçalho__logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cabeçalho__logo img {
+            width: 110px;
+            height: auto;
+        }
+
+        .cabeçalho__titulo {
+            font-size: 2em;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .cabeçalho_menu {
+            margin-left: auto;
+        }
+
+        .opções {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .opções__link {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .opções__link:hover {
+            color: #040404;
+        }
+
+        .welcome-text {
+            font-size: 3em;
+            font-family: 'Pacifico', cursive;
+            color: #040404;
+            text-align: center;
+            margin-top: 120px; /* Distância após o cabeçalho */
+        }
+
+        .login-container {
+            max-width: 400px;
+            background-color: #040404;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #040404;
+            margin-top: 30px; /* Distância do formulário após o texto */
+        }
+
+        .login-container h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            border: 1px solid #040404;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #deb3b9;
+            color: #FFF;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #040404;
+        }
+
+        .form-group a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                padding: 20px;
+                max-width: 90%;
+            }
+
+            .welcome-text {
+                font-size: 2.5em;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+   <!-- Cabeçalho -->
+   <header class="cabeçalho">
+    <div class="cabeçalho__logo">
+        <img src="img/logo.logo.png.jpg" alt="Logo empresa">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="cabeçalho__titulo"><b>ⒹⓄⓊⒷⓁⒺ ⒸⒶⓀⒺ</b></h1>
+    </div>
+    <nav class="cabeçalho_menu">
+        <ul class="opções">
+            <span></span>
+            <li><a href="home.html" class="opções__link">𝑯𝑶𝑴𝑬</a></li>
+            <span></span>            
+            <li><a href="cardapio.html" class="opções__link">𝑪𝑨𝑹𝑫𝑨̀𝑷𝑰𝑶</a></li>
+            <span></span>
+            <li><a href="login.html" class="opções__link">𝑳𝑶𝑮𝑰𝑵</a></li>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </ul>
+    </nav>
+</header>
+    <!-- Texto de boas-vindas abaixo do cabeçalho -->
+    <div class="welcome-text">Bem-vindos ao Double Cake!</div>
+
+    <!-- Formulário de login -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required placeholder="Digite seu nome de usuário">
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Entrar">
+            </div>
+            <div class="form-group">
+                <a href="INDEX.HTML">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
